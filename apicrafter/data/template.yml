@@ -1,0 +1,58 @@
+version: 1
+project-id:
+project-name: myproject
+
+server:
+  host: '127.0.0.1'
+  port: 10092
+
+logging:
+  debug: True
+  logfile: log/dataapi.log
+
+
+eve_config:
+  url_prefix:
+  api_version: v1
+  pagination_limit: 20
+  pagination_default: 20
+  extra_response_fields:
+  sorting: True
+  projection: False
+  jsonp_argument: callback
+  xml: False
+  debug: True
+  resource_methods:
+    - GET
+  item_methods:
+    - GET
+  cache_control: 'max_age=20'
+  cache_expires: 1000
+  query_max_results: 'max_results'
+  rate_limit_get:  '(100000, 60*60)'
+  hateoas: False
+
+openapi:
+  enabled: False
+  host: '127.0.0.1'
+  config:
+    title: My OpenAPI
+    version: '3.0'
+    schemes:
+      - http
+      - https
+    description: 'My OpenAPI API'
+    contact:
+      name: ''
+      url: ''
+    license:
+      name: ''
+      url: ''
+
+
+group:
+  host: 127.0.0.1
+  port: 27017
+  dbtype: mongodb
+
+

@@ -1,0 +1,624 @@
+{
+    "API_VERSION": "v1",
+    "CACHE_CONTROL": "max_age=20",
+    "CACHE_EXPIRES": 1000,
+    "DEBUG": true,
+    "EXTRA_RESPONSE_FIELDS": null,
+    "HATEOAS": false,
+    "ITEM_METHODS": [
+        "GET"
+    ],
+    "JSONP_ARGUMENT": "callback",
+    "PAGINATION_DEFAULT": 20,
+    "PAGINATION_LIMIT": 20,
+    "PROJECTION": false,
+    "QUERY_MAX_RESULTS": "max_results",
+    "RATE_LIMIT_GET": [
+        100000,
+        3600
+    ],
+    "RESOURCE_METHODS": [
+        "GET"
+    ],
+    "SORTING": true,
+    "URL_PREFIX": null,
+    "XML": false,
+    "MONGO1_HOST": "127.0.0.1",
+    "MONGO1_DBNAME": "rusregions",
+    "MONGO1_PORT": 27017,
+    "MONGO2_HOST": "127.0.0.1",
+    "MONGO2_DBNAME": "rusregions",
+    "MONGO2_PORT": 27017,
+    "MONGO3_HOST": "127.0.0.1",
+    "MONGO3_DBNAME": "rusregions",
+    "MONGO3_PORT": 27017,
+    "MONGO4_HOST": "127.0.0.1",
+    "MONGO4_DBNAME": "rusregions",
+    "MONGO4_PORT": 27017,
+    "MONGO5_HOST": "127.0.0.1",
+    "MONGO5_DBNAME": "rusregions",
+    "MONGO5_PORT": 27017,
+    "MONGO6_HOST": "127.0.0.1",
+    "MONGO6_DBNAME": "rusregions",
+    "MONGO6_PORT": 27017,
+    "MONGO7_HOST": "127.0.0.1",
+    "MONGO7_DBNAME": "rusregions",
+    "MONGO7_PORT": 27017,
+    "MONGO8_HOST": "127.0.0.1",
+    "MONGO8_DBNAME": "rusregions",
+    "MONGO8_PORT": 27017,
+    "MONGO9_HOST": "127.0.0.1",
+    "MONGO9_DBNAME": "rusregions",
+    "MONGO9_PORT": 27017,
+    "MONGO10_HOST": "127.0.0.1",
+    "MONGO10_DBNAME": "rusregions",
+    "MONGO10_PORT": 27017,
+    "MONGO11_HOST": "127.0.0.1",
+    "MONGO11_DBNAME": "rusregions",
+    "MONGO11_PORT": 27017,
+    "DOMAIN": {
+        "rusregions/cities": {
+            "item_title": "cities",
+            "mongo_prefix": "MONGO1",
+            "allowed_filters": [
+                "_id",
+                "cityStatus",
+                "id",
+                "region"
+            ],
+            "datasource": {
+                "source": "cities"
+            },
+            "schema": {
+                "_id": {
+                    "type": "string"
+                },
+                "nameRu": {
+                    "type": "string"
+                },
+                "region": {
+                    "type": "string"
+                },
+                "population": {
+                    "type": "integer"
+                },
+                "foundation": {
+                    "type": "string"
+                },
+                "cityStatus": {
+                    "type": "string"
+                },
+                "Federal districts": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "prevNames": {
+                    "type": "string"
+                },
+                "websiteUrl": {
+                    "type": "string"
+                },
+                "wikipediaUrl": {
+                    "type": "string"
+                },
+                "dbpediaUrl": {
+                    "type": "string"
+                }
+            }
+        },
+        "rusregions/mildistricts": {
+            "item_title": "mildistricts",
+            "mongo_prefix": "MONGO2",
+            "allowed_filters": [
+                "_id",
+                "id",
+                "nameRU",
+                "abbrEN",
+                "abbrRU",
+                "nameEN",
+                "admCenter"
+            ],
+            "datasource": {
+                "source": "mildistricts"
+            },
+            "schema": {
+                "_id": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "Regions": {
+                    "type": "string"
+                },
+                "nameRU": {
+                    "type": "string"
+                },
+                "abbrEN": {
+                    "type": "string"
+                },
+                "abbrRU": {
+                    "type": "string"
+                },
+                "nameEN": {
+                    "type": "string"
+                },
+                "admCenter": {
+                    "type": "string"
+                },
+                "milruURL": {
+                    "type": "string"
+                },
+                "bordersByAbbr": {
+                    "type": "string"
+                },
+                "wikipediaURL": {
+                    "type": "string"
+                },
+                "nameRU (from Regions)": {
+                    "type": "string"
+                }
+            }
+        },
+        "rusregions/railroads": {
+            "item_title": "railroads",
+            "mongo_prefix": "MONGO3",
+            "allowed_filters": [
+                "_id",
+                "id",
+                "websiteUrl"
+            ],
+            "datasource": {
+                "source": "railroads"
+            },
+            "schema": {
+                "_id": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "regions": {
+                    "type": "string"
+                },
+                "wikipediaUrl": {
+                    "type": "string"
+                },
+                "websiteUrl": {
+                    "type": "string"
+                },
+                "bordersRail": {
+                    "type": "string"
+                },
+                "nameRU (from Regions)": {
+                    "type": "string"
+                },
+                "name (from bordersRail)": {
+                    "type": "string"
+                }
+            }
+        },
+        "rusregions/economregions": {
+            "item_title": "economregions",
+            "mongo_prefix": "MONGO4",
+            "allowed_filters": [
+                "_id",
+                "id",
+                "abbrRU",
+                "abbrEN"
+            ],
+            "datasource": {
+                "source": "economregions"
+            },
+            "schema": {
+                "_id": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "Regions": {
+                    "type": "string"
+                },
+                "nameRU": {
+                    "type": "string"
+                },
+                "abbrRU": {
+                    "type": "string"
+                },
+                "nameEN": {
+                    "type": "string"
+                },
+                "abbrEN": {
+                    "type": "string"
+                },
+                "nameRU (from Regions)": {
+                    "type": "string"
+                }
+            }
+        },
+        "rusregions/feddistricts": {
+            "item_title": "feddistricts",
+            "mongo_prefix": "MONGO5",
+            "allowed_filters": [
+                "_id",
+                "id",
+                "abbrRU",
+                "abbrEN",
+                "admCenter",
+                "websiteURL"
+            ],
+            "datasource": {
+                "source": "feddistricts"
+            },
+            "schema": {
+                "_id": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "Regions": {
+                    "type": "string"
+                },
+                "nameRU": {
+                    "type": "string"
+                },
+                "nameEN": {
+                    "type": "string"
+                },
+                "abbrRU": {
+                    "type": "string"
+                },
+                "abbrEN": {
+                    "type": "string"
+                },
+                "admCenter": {
+                    "type": "string"
+                },
+                "websiteURL": {
+                    "type": "string"
+                },
+                "bordersByAbbr": {
+                    "type": "string"
+                },
+                "wikipediaURL": {
+                    "type": "string"
+                },
+                "dbpediaURL": {
+                    "type": "string"
+                },
+                "Cities": {
+                    "type": "string"
+                },
+                "nameRU (from Regions)": {
+                    "type": "string"
+                }
+            }
+        },
+        "rusregions/pipelines": {
+            "item_title": "pipelines",
+            "mongo_prefix": "MONGO6",
+            "allowed_filters": [
+                "_id",
+                "id",
+                "pipetype"
+            ],
+            "datasource": {
+                "source": "pipelines"
+            },
+            "schema": {
+                "_id": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "pipetype": {
+                    "type": "string"
+                },
+                "regions": {
+                    "type": "string"
+                },
+                "wikipediaUrl": {
+                    "type": "string"
+                },
+                "nameRU (from Regions)": {
+                    "type": "string"
+                }
+            }
+        },
+        "rusregions/regions": {
+            "item_title": "regions",
+            "mongo_prefix": "MONGO7",
+            "allowed_filters": [
+                "_id",
+                "codeOKATO",
+                "codeKLADR",
+                "codeGOST7_67_cyr",
+                "ammapKey",
+                "oceanBasin",
+                "regType",
+                "timezoneUTC",
+                "isLandlocked",
+                "subjectCode",
+                "leaderPositionName",
+                "codeISO3166_lat2",
+                "cbrCode",
+                "id"
+            ],
+            "datasource": {
+                "source": "regions"
+            },
+            "schema": {
+                "_id": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "nameEN": {
+                    "type": "string"
+                },
+                "nameRU": {
+                    "type": "string"
+                },
+                "codeOKATO": {
+                    "type": "string"
+                },
+                "codeKLADR": {
+                    "type": "string"
+                },
+                "regType": {
+                    "type": "string"
+                },
+                "codeGOST7_67_cyr": {
+                    "type": "string"
+                },
+                "codeGOST7_67_dig": {
+                    "type": "string"
+                },
+                "codeISO3166_lat2": {
+                    "type": "string"
+                },
+                "codeISO3166_lat3": {
+                    "type": "string"
+                },
+                "timezoneUTC": {
+                    "type": "string"
+                },
+                "taxCodes": {
+                    "type": "string"
+                },
+                "automobileCodes": {
+                    "type": "string"
+                },
+                "federalDistrict": {
+                    "type": "string"
+                },
+                "militaryDistrict": {
+                    "type": "string"
+                },
+                "economicRegion": {
+                    "type": "string"
+                },
+                "cbrCode": {
+                    "type": "string"
+                },
+                "borderRegions": {
+                    "type": "string"
+                },
+                "isLandlocked": {
+                    "type": "string"
+                },
+                "ammapKey": {
+                    "type": "string"
+                },
+                "subjectCode": {
+                    "type": "string"
+                },
+                "Railroads": {
+                    "type": "string"
+                },
+                "Fedroads": {
+                    "type": "string"
+                },
+                "dbPedia": {
+                    "type": "string"
+                },
+                "wikipediaUrl": {
+                    "type": "string"
+                },
+                "kremlinRuUrl": {
+                    "type": "string"
+                },
+                "leaderPositionName": {
+                    "type": "string"
+                },
+                "executivePowerUrl": {
+                    "type": "string"
+                },
+                "legislativePowerName": {
+                    "type": "string"
+                },
+                "leaderUrl": {
+                    "type": "string"
+                },
+                "executivePowerName": {
+                    "type": "string"
+                },
+                "legislativePowerUrl": {
+                    "type": "string"
+                },
+                "Cities": {
+                    "type": "string"
+                },
+                "borderCountries": {
+                    "type": "string"
+                },
+                "closeSeas": {
+                    "type": "string"
+                },
+                "Pipelines": {
+                    "type": "string"
+                },
+                "oceanBasin": {
+                    "type": "string"
+                }
+            }
+        },
+        "rusregions/fedroads": {
+            "item_title": "fedroads",
+            "mongo_prefix": "MONGO8",
+            "allowed_filters": [
+                "_id",
+                "id",
+                "roadType",
+                "roadSurface"
+            ],
+            "datasource": {
+                "source": "fedroads"
+            },
+            "schema": {
+                "_id": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "nameRU": {
+                    "type": "string"
+                },
+                "regions": {
+                    "type": "string"
+                },
+                "wikipediaUrl": {
+                    "type": "string"
+                },
+                "roadType": {
+                    "type": "string"
+                },
+                "euRoadsRelated": {
+                    "type": "string"
+                },
+                "asiaRoadsRelated": {
+                    "type": "string"
+                },
+                "length": {
+                    "type": "string"
+                },
+                "roadSurface": {
+                    "type": "string"
+                },
+                "nameRU (from Regions)": {
+                    "type": "string"
+                },
+                "russRoadsRelated": {
+                    "type": "string"
+                }
+            }
+        },
+        "rusregions/borders": {
+            "item_title": "borders",
+            "mongo_prefix": "MONGO9",
+            "allowed_filters": [
+                "_id",
+                "borderType",
+                "id"
+            ],
+            "datasource": {
+                "source": "borders"
+            },
+            "schema": {
+                "_id": {
+                    "type": "string"
+                },
+                "leftSubjectCode": {
+                    "type": "string"
+                },
+                "countryCode": {
+                    "type": "string"
+                },
+                "borderType": {
+                    "type": "string"
+                },
+                "borderRelationType": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                }
+            }
+        },
+        "rusregions/seas": {
+            "item_title": "seas",
+            "mongo_prefix": "MONGO10",
+            "allowed_filters": [
+                "_id",
+                "id",
+                "oceanBasin",
+                "nameRU"
+            ],
+            "datasource": {
+                "source": "seas"
+            },
+            "schema": {
+                "_id": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "Regions": {
+                    "type": "string"
+                },
+                "oceanBasin": {
+                    "type": "string"
+                },
+                "nameRU": {
+                    "type": "string"
+                },
+                "nameRU (from Regions)": {
+                    "type": "string"
+                }
+            }
+        },
+        "rusregions/countries": {
+            "item_title": "countries",
+            "mongo_prefix": "MONGO11",
+            "allowed_filters": [
+                "_id",
+                "id",
+                "nameRU"
+            ],
+            "datasource": {
+                "source": "countries"
+            },
+            "schema": {
+                "_id": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "Regions": {
+                    "type": "string"
+                },
+                "nameRU": {
+                    "type": "string"
+                },
+                "nameRU (from Regions)": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

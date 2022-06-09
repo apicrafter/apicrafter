@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"key":{"borderType":{"$numberInt":"1"}},"name":"borderType_1"},{"v":{"$numberInt":"2"},"key":{"id":{"$numberInt":"1"}},"name":"id_1"}],"uuid":"9d9e5bb2872749eaa08991e2cee3e018","collectionName":"borders","type":"collection"}

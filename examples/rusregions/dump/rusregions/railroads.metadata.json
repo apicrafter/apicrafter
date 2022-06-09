@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"key":{"id":{"$numberInt":"1"}},"name":"id_1"},{"v":{"$numberInt":"2"},"key":{"websiteUrl":{"$numberInt":"1"}},"name":"websiteUrl_1"}],"uuid":"18d2c3a7c4654471ae8500790c4eaed5","collectionName":"railroads","type":"collection"}

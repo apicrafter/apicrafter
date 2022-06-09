@@ -1,0 +1,4 @@
+eve
+eve-swagger
+click
+PyYAML

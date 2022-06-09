@@ -1,0 +1,170 @@
+eve_config:
+  api_version: v1
+  cache_control: max_age=20
+  cache_expires: 1000
+  debug: true
+  extra_response_fields: null
+  hateoas: false
+  item_methods:
+  - GET
+  jsonp_argument: callback
+  pagination_default: 20
+  pagination_limit: 20
+  projection: false
+  query_max_results: max_results
+  rate_limit_get: (100000, 60*60)
+  resource_methods:
+  - GET
+  sorting: true
+  url_prefix: null
+  xml: false
+group:
+  endpoints:
+  - allowed_filters:
+    - _id
+    - cityStatus
+    - id
+    - region
+    dbname: rusregions
+    id: cities
+    item_title: cities
+    schema_file: schemes/rusregions_cities.json
+    source: cities
+  - allowed_filters:
+    - _id
+    - id
+    - nameRU
+    - abbrEN
+    - abbrRU
+    - nameEN
+    - admCenter
+    dbname: rusregions
+    id: mildistricts
+    item_title: mildistricts
+    schema_file: schemes/rusregions_mildistricts.json
+    source: mildistricts
+  - allowed_filters:
+    - _id
+    - id
+    - websiteUrl
+    dbname: rusregions
+    id: railroads
+    item_title: railroads
+    schema_file: schemes/rusregions_railroads.json
+    source: railroads
+  - allowed_filters:
+    - _id
+    - id
+    - abbrRU
+    - abbrEN
+    dbname: rusregions
+    id: economregions
+    item_title: economregions
+    schema_file: schemes/rusregions_economregions.json
+    source: economregions
+  - allowed_filters:
+    - _id
+    - id
+    - abbrRU
+    - abbrEN
+    - admCenter
+    - websiteURL
+    dbname: rusregions
+    id: feddistricts
+    item_title: feddistricts
+    schema_file: schemes/rusregions_feddistricts.json
+    source: feddistricts
+  - allowed_filters:
+    - _id
+    - id
+    - pipetype
+    dbname: rusregions
+    id: pipelines
+    item_title: pipelines
+    schema_file: schemes/rusregions_pipelines.json
+    source: pipelines
+  - allowed_filters:
+    - _id
+    - codeOKATO
+    - codeKLADR
+    - codeGOST7_67_cyr
+    - ammapKey
+    - oceanBasin
+    - regType
+    - timezoneUTC
+    - isLandlocked
+    - subjectCode
+    - leaderPositionName
+    - codeISO3166_lat2
+    - cbrCode
+    - id
+    dbname: rusregions
+    id: regions
+    item_title: regions
+    schema_file: schemes/rusregions_regions.json
+    source: regions
+  - allowed_filters:
+    - _id
+    - id
+    - roadType
+    - roadSurface
+    dbname: rusregions
+    id: fedroads
+    item_title: fedroads
+    schema_file: schemes/rusregions_fedroads.json
+    source: fedroads
+  - allowed_filters:
+    - _id
+    - borderType
+    - id
+    dbname: rusregions
+    id: borders
+    item_title: borders
+    schema_file: schemes/rusregions_borders.json
+    source: borders
+  - allowed_filters:
+    - _id
+    - id
+    - oceanBasin
+    - nameRU
+    dbname: rusregions
+    id: seas
+    item_title: seas
+    schema_file: schemes/rusregions_seas.json
+    source: seas
+  - allowed_filters:
+    - _id
+    - id
+    - nameRU
+    dbname: rusregions
+    id: countries
+    item_title: countries
+    schema_file: schemes/rusregions_countries.json
+    source: countries
+  host: 127.0.0.1
+  port: 27017
+logging:
+  debug: true
+  logfile: log/dataapi.log
+openapi:
+  config:
+    contact:
+      name: ''
+      url: ''
+    description: My OpenAPI API
+    license:
+      name: ''
+      url: ''
+    schemes:
+    - http
+    - https
+    title: My OpenAPI
+    version: '3.0'
+  enabled: false
+  host: 127.0.0.1
+project-id: 77ba029e-e94b-4a55-8b17-b7635ffc8d74
+project-name: myproject
+server:
+  host: 127.0.0.1
+  port: 10092
+version: 1
